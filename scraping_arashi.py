@@ -5,10 +5,9 @@ import time
 
 list_df = pd.DataFrame(columns=['曲名', '歌詞'])
 
-# 歌詞一覧ページ（嵐）
+# lyrics list page
 for page in range(1, 3):
 	url = 'https://www.uta-net.com/artist/3891/0/' + str(page) + '/'
-	# 曲ページURL
 	base_url = 'https://www.uta-net.com'
 	response = requests.get(url)
 	soup = BeautifulSoup(response.text, 'lxml')
@@ -16,7 +15,7 @@ for page in range(1, 3):
 	for link in links:
 		a = base_url + (link.a.get('href'))
 
-		# 歌詞詳細ページ
+		# lyrics details page
 		response = requests.get(a)
 		soup = BeautifulSoup(response.text, 'lxml')
 		song_names = soup.find('div', class_='title')
