@@ -30,7 +30,7 @@ $pip install urllib3
 $pip install pandas
 ```
 
-**step2. wakati_arashi.py**
+**step2. morphological_analysis_arashi.py**
 
 Add these libraries:
 ```
