@@ -1,9 +1,11 @@
 Visualize lyrics and predict what ARASHI wanted to tell us in Python. 
 
 ## Description
-* scraping for the names and prize money that is over 100 million the characters and save as csv file
+* get the lyrics for all songs
 
-* visualize bounty ranking by malplotlib on Jupyter Notebook
+* clean up for getting accurate date
+
+* visualize lyrics by wordcloud on Jupyter Notebook
 
 ## Requirement
 * Windows10
@@ -20,13 +22,12 @@ git clone https://github.com/yuuuusuke1997/arashi.git
 ## Usage
 **step1. scraping_arashi.py**
 
-Add these libraries:
+1. Add these libraries:
 ```
 $pip install beautifulsoup4
 $pip install requests
 $pip install urllib3
 $pip install pandas
-$pip install regex
 ```
 
 **step2. wakati_arashi.py**
