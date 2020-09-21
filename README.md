@@ -16,7 +16,7 @@
 Git clone is easiest to install these files:
 ```
 git clone https://github.com/yuuuusuke1997/arashi.git
-cd arashi
+cd wordcloud_arashi
 ```
 
 ## Usage
